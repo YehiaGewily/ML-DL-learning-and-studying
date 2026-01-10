@@ -1,34 +1,42 @@
 # Machine Learning From Scratch
 
 ## Overview
-This repository contains my personal implementations of fundamental Machine Learning algorithms from scratch using Python and NumPy. The goal of this project is to deeply understand the mathematics and mechanics behind these algorithms by building them without high-level ML libraries like scikit-learn.
+This repository contains mathematical implementations of fundamental Machine Learning algorithms from scratch using Python and NumPy. The goal is to demonstrate the core mechanics, optimization techniques, and mathematical foundations underlying these models without relying on high-level abstractions like scikit-learn.
 
 ## Algorithms Implemented
 
-| Algorithm | Description |
-|-----------|-------------|
-| **[Linear Regression](./Linear%20Regression)** | Implementation of Linear Regression using Gradient Descent. |
-| **[Logistic Regression](./Logistic%20Regression)** | Binary classification algorithm using the sigmoid function. |
-| **[Decision Tree](./DecisionTree)** | Implementation of ID3/CART decision trees. |
-| **[Random Forest](./Random%20Forest)** | Ensemble learning method using multiple decision trees. |
-| **[Naive Bayes](./Naive%20Bayes)** | Probabilistic classifier based on Bayes' theorem. |
-| **[K-Nearest Neighbors (KNN)](./KNN)** | Non-parametric method used for classification and regression. |
-| **[Support Vector Machine (SVM)](./SVM)** | Linear SVM implementation using Hinge Loss. |
-| **[Perceptron](./Perceptron)** | The fundamental unit of Neural Networks. |
-| **[AdaBoost](./AdaBoost)** | Boosting technique to combine weak classifiers. |
-| **[Linear Discriminant Analysis (LDA)](./LDA)** | Dimensionality reduction technique. |
-| **[Principal Component Analysis (PCA)](./PCA)** | Unsupervised learning for dimensionality reduction. |
-| **[K-Means Clustering](./K-Means%20Clustering)** | Unsupervised algorithm for partitioning data into k clusters. |
+### Supervised Learning
+
+| Algorithm | Type | Key Concepts |
+|-----------|------|--------------|
+| **[Linear Regression](./Linear%20Regression)** | Regression | Gradient Descent, Mean Squared Error (MSE) |
+| **[Logistic Regression](./Logistic%20Regression)** | Classification | Sigmoid Function, Log-Loss, Binary Classification |
+| **[Decision Tree](./DecisionTree)** | Classification | Entropy, Gini Impurity, Information Gain |
+| **[Random Forest](./Random%20Forest)** | Ensemble | Bagging, Feature Randomness, Voting Mechanics |
+| **[Naive Bayes](./Naive%20Bayes)** | Classification | Bayes' Theorem, Gaussian Distribution |
+| **[KNN](./KNN)** | Reg/Class | Euclidean Distance, K-Nearest Neighbors Voting |
+| **[SVM](./SVM)** | Classification | Hinge Loss, Hyperplane Optimization |
+| **[Perceptron](./Perceptron)** | Classification | Single-Layer Neural Network Logic |
+| **[AdaBoost](./AdaBoost)** | Ensemble | Weak Classifiers, Sample Weighting |
+
+### Unsupervised Learning
+
+| Algorithm | Type | Key Concepts |
+|-----------|------|--------------|
+| **[PCA](./PCA)** | Dim. Reduction | Covariance Matrix, Eigendecomposition |
+| **[LDA](./LDA)** | Dim. Reduction | Fisher's Linear Discriminant, Class Separation |
+| **[K-Means](./K-Means%20Clustering)** | Clustering | Centroid Initialization, Euclidean Distance |
 
 ## Prerequisites
-- Python 3.x
-- NumPy
-- Matplotlib (for visualizations)
+* Python 3.x
+* NumPy
+* Matplotlib (for visualizations)
 
 ## Usage
-Each directory contains a self-contained implementation. You can typically run the demonstration script within each module:
+Each algorithm is contained within its own directory. You can run the demonstration script inside each module to see the training process and results.
+
+**Example:**
 
 ```bash
 cd "Linear Regression"
 python main.py
-```

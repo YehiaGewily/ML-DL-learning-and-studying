@@ -5,6 +5,8 @@ This repository contains mathematical implementations of fundamental Machine Lea
 
 ## Algorithms Implemented
 
+
+    
 ### Supervised Learning
 
 | Algorithm | Type | Key Concepts |
@@ -40,3 +42,4 @@ Each algorithm is contained within its own directory. You can run the demonstrat
 ```bash
 cd "Linear Regression"
 python main.py
+
